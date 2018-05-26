@@ -42,6 +42,16 @@ public class AnimalMonitor
         .forEach(record -> System.out.println(record.getDetails()));
     }
     
+    public void printList2(){
+        sightings.forEach((Sighting record) ->{
+                System.out.println(record.getDetails());
+        });
+    }
+    
+    public void printList2Reduced(){
+        sightings.forEach(record-> System.out.println(record.getDetails()));
+    }
+    
     /**
      * Print the details of all the sightings of the given animal.
      * @param animal The type of animal.
